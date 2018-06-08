@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:text="@string/prompt_title"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtCom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:text="@string/prompt_com_play"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_my_play"
+            android:layout_below="@+id/txtTitle"
+            android:layout_alignRight="@+id/txtTitle"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnScissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPlayer"
+            android:layout_alignRight="@+id/txtPlayer"
+            android:textSize="20sp"
+            android:text="@string/play_scissors"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txtComPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnScissors"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignLeft="@+id/txtCom"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnStones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnScissors"
+            android:layout_alignRight="@+id/txtPlayer"
+            android:textSize="20sp"
+            android:text="@string/play_stones"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnStones"
+            android:layout_alignRight="@+id/txtPlayer"
+            android:textSize="20sp"
+            android:text="@string/play_paper"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPaper"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignLeft="@+id/txtCom"
+            android:layout_marginTop="20dp"
+            android:text="@string/result" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
