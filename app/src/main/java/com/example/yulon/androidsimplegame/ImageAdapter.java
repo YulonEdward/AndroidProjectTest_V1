@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -45,18 +46,14 @@ public class ImageAdapter extends BaseAdapter{
                     new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
                             LinearLayout.LayoutParams.MATCH_PARENT);
 
-            v.setLayoutParams(new GridLayout.LayoutParams(params));
+            v.setLayoutParams(new GridView.LayoutParams(params));
             v.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
             v.setPadding(10, 10, 10, 10);
         }else{
             v = (ImageView)convertView;
-
-            //把要顯示的縮圖放到 ImageView 物件中
-            v.setImageResource(miImgArr[position]);
-
-            return v;
         }
-
-        return null;
+        //把要顯示的縮圖放到 ImageView 物件中
+        v.setImageResource(miImgArr[position]);
+        return v;
     }
 }
